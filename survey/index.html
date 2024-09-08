@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self Evaluation Survey</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+  <style>
+   .category-title {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+    .subcategory-title {
+      margin-top: 10px;
+      color: #555;
+    }
+    .rating-select {
+      width: 80px; 
+      display: inline-block;
+      margin-left: 10px; 
+    }    
+    .text-high-score {
+      color: green;
+    }
+    .text-low-score {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+	<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../">COI Praxis Framework</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Self Reflection Survey</a>
+        </li>        
+      </ul>      
+    </div>
+  </div>
+</nav>
+</header>
+   <div class="text-center mb-4">
+      <button id="themeToggleBtn" class="btn btn-outline-secondary">Switch to Dark Theme</button>
+    </div>
+  <div class="container">
+ <div class="jumbotron bg-light">
+  <h1 class="display-4">COI Self Evaluation Survey</h1>
+  <p class="lead">This survey is designed to be taken from the educator's perspective as a self-evaluation tool. The goal is to help educators reflect on how well they feel they can influence various aspects of the community of inquiry in their classroom. This includes their ability to affect teaching presence, social presence, and cognitive presence — key elements that shape the learning environment and student engagement.</p>
+  <hr class="my-4">
+  
+</div>
+   
+    <form id="feedbackForm">
+      <div id="form-content"></div>
+      <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+    
+    <div class="mt-4">
+      <h3>Scores:</h3>
+      <div id="results" class="row"></div> <!-- Use Bootstrap row for card layout -->
+    </div>
+  </div>
+<script>
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const body = document.body;
+
+    // Function to toggle between light and dark theme
+    themeToggleBtn.addEventListener('click', function() {
+      if (body.classList.contains('light-theme')) {
+        body.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+        themeToggleBtn.textContent = 'Switch to Light Theme'; // Update button text
+      } else {
+        body.classList.remove('dark-theme');
+        body.classList.add('light-theme');
+        themeToggleBtn.textContent = 'Switch to Dark Theme'; // Update button text
+      }
+    });
+  </script>
+  <!-- Load survey.js dynamically and ensure form is generated after it's loaded -->
+  <script>
+    const loadSurveyScript = () => {
+      const script = document.createElement('script');
+      script.src = 'survey.js';
+      script.onload = () => {
+        generateForm(); // Ensure form is generated after survey.js is loaded
+      };
+      script.onerror = () => {
+        console.error('Failed to load survey.js');
+      };
+      document.head.appendChild(script);
+    };
+
+    // Function to generate the form using questions from survey.js
+    function generateForm() {
+      const formContent = document.getElementById('form-content');
+      let html = '';
+
+      // Check if questions are loaded from survey.js
+      if (!questions) {
+        console.error("Questions could not be loaded from survey.js");
+        return;
+      }
+
+      // Loop through categories and subcategories to generate form fields
+      for (let category in questions) {
+        html += `<h4 class="category-title">${category}</h4>`;
+        
+        for (let subcategory in questions[category]) {
+          html += `<h5 class="subcategory-title">${subcategory}</h5>`;
+          questions[category][subcategory].forEach((question, index) => {
+            html += `
+              <div class="row mb-3">
+                <div class="col-md-10">
+                  <label>${question}</label>
+                </div>
+                <div class="col-md-2">
+                  <select class="form-select rating-select" name="${category}-${subcategory}-${index}" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+            `;
+          });
+        }
+      }
+
+      formContent.innerHTML = html;
+    }
+
+    // Function to calculate the average scores for each category and subcategory
+    function calculateScores(event) {
+      event.preventDefault();
+      const formData = new FormData(document.getElementById('feedbackForm'));
+      const scores = {};
+      const questionCounts = {}; // To track the number of questions in each subcategory and category
+      const overallCategoryScores = {}; // To track scores for overall categories
+
+      // Initialize score tracking for each category and subcategory
+      for (let category in questions) {
+        scores[category] = {};
+        overallCategoryScores[category] = 0;
+        questionCounts[category] = {};
+
+        for (let subcategory in questions[category]) {
+          scores[category][subcategory] = 0;
+          questionCounts[category][subcategory] = questions[category][subcategory].length; // Get number of questions in each subcategory
+        }
+      }
+
+      // Add up the scores for each category and subcategory
+      for (let [key, value] of formData.entries()) {
+        const [category, subcategory] = key.split('-');
+        scores[category][subcategory] += parseInt(value);
+      }
+
+      // Calculate the averages for each subcategory and overall category
+      for (let category in scores) {
+        let totalCategoryScore = 0;
+        let totalQuestionsInCategory = 0;
+
+        for (let subcategory in scores[category]) {
+          const subcategoryScore = scores[category][subcategory];
+          const numQuestionsInSubcategory = questionCounts[category][subcategory];
+
+          // Calculate average for subcategory
+          const averageSubcategoryScore = subcategoryScore / numQuestionsInSubcategory;
+          scores[category][subcategory] = averageSubcategoryScore.toFixed(2); // Save the average as the score
+
+          // Add to the overall category score
+          totalCategoryScore += subcategoryScore;
+          totalQuestionsInCategory += numQuestionsInSubcategory;
+        }
+
+        // Calculate average for the overall category
+        overallCategoryScores[category] = (totalCategoryScore / totalQuestionsInCategory).toFixed(2);
+      }
+
+      displayResults(scores, overallCategoryScores);
+    }
+
+    // Function to get the appropriate text class based on score
+    function getScoreClass(score) {
+      return score >= 2.5 ? 'text-high-score' : 'text-low-score';
+    }
+
+    // Function to display the results in Bootstrap cards with conditional formatting
+    function displayResults(scores, overallCategoryScores) {
+      const resultsDiv = document.getElementById('results');
+      resultsDiv.innerHTML = ''; // Clear previous results
+
+      // Display the averages for each subcategory in Bootstrap cards
+      for (let category in scores) {
+        let html = `
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">${category} (Average: <span class="${getScoreClass(overallCategoryScores[category])}">${overallCategoryScores[category]}</span>)</h5>
+                <ul class="list-group list-group-flush">
+        `;
+
+        for (let subcategory in scores[category]) {
+          html += `
+            <li class="list-group-item">
+              <strong>${subcategory}:</strong> 
+              <span class="${getScoreClass(scores[category][subcategory])}">${scores[category][subcategory]}</span>
+            </li>
+          `;
+        }
+
+        html += `
+                </ul>
+              </div>
+            </div>
+          </div>
+        `;
+
+        resultsDiv.innerHTML += html;
+      }
+    }
+
+    // Event listener for form submission
+    document.getElementById('feedbackForm').addEventListener('submit', calculateScores);
+
+    // Load the survey.js script and generate the form
+    loadSurveyScript();
+  </script>
+</body>
+</html>

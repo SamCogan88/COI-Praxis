@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Grid Layout</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="script.js"></script>
+  <script src="js/styleswitcher.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css" title="default" />
+		<link rel="alternate stylesheet" type="text/css" href="darkStyle.css" title="alternate" />
+  <style>
+  .container{
+	max-width: 1920px;
+  }
+  .hidden{
+	display:none;
+  }
+  
+  </style>
+</head>
+<body>
+	<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../">COI Praxis Framework</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/survey">Self Reflection Survey</a>
+        </li>        
+      </ul>      
+    </div>
+  </div>
+</nav>
+</header>
+  <div class="container">
+    <!-- Heading -->
+    <h1 class="text-center my-4">Community of Inquiry</h1>
+    <h1 class="text-center my-4">Praxis Framework</h1>
+    
+    <!-- Row 1 -->
+    <div class="row">
+    <div class="col-md-4 card">
+        <div class="col-md-12">
+            <h2><a href="#">Social Presence</a></h2>
+			<p>Social presence is the ability of learners to project their personal characteristics into the community of inquiry, thereby presenting themselves as 'real people.'</p>			
+        </div>
+       <!-- Social Presence: Emotional Expression -->
+<div class="col-md-12 card">
+    <div class="card-header" id="headingEmotionalExpression" data-bs-toggle="collapse" data-bs-target="#collapseEmotionalExpression" aria-expanded="false" aria-controls="collapseEmotionalExpression" style="cursor: pointer;">
+        <h3 class="mb-0">Emotional Expression</h3>
+    </div>
+    <div id="collapseEmotionalExpression" class="collapse" aria-labelledby="headingEmotionalExpression" data-bs-parent="#accordionExample">
+        <div class="card-body">
+            <div id="emotional-expression"></div> <!-- Collapsible content will be injected here -->
+        </div>
+    </div>
+</div>
+
+<!-- Social Presence: Open Communication -->
+<div class="col-md-12 card">
+    <div class="card-header" id="headingOpenCommunication" data-bs-toggle="collapse" data-bs-target="#collapseOpenCommunication" aria-expanded="false" aria-controls="collapseOpenCommunication" style="cursor: pointer;">
+        <h3 class="mb-0">Open Communication</h3>
+    </div>
+    <div id="collapseOpenCommunication" class="collapse" aria-labelledby="headingOpenCommunication" data-bs-parent="#accordionExample">
+        <div class="card-body">
+            <div id="open-communication"></div> <!-- Collapsible content will be injected here -->
+        </div>
+    </div>
+</div>
+
+<!-- Social Presence: Group Cohesion -->
+<div class="col-md-12 card">
+    <div class="card-header" id="headingGroupCohesion" data-bs-toggle="collapse" data-bs-target="#collapseGroupCohesion" aria-expanded="false" aria-controls="collapseGroupCohesion" style="cursor: pointer;">
+        <h3 class="mb-0">Group Cohesion</h3>
+    </div>
+    <div id="collapseGroupCohesion" class="collapse" aria-labelledby="headingGroupCohesion" data-bs-parent="#accordionExample">
+        <div class="card-body">
+            <div id="group-cohesion"></div> <!-- Collapsible content will be injected here -->
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <div class="col-md-4 card">
+        <div class="col-md-12">
+            <h2><a href="#">Teaching Presence</a></h2>
+			<p>Teaching presence is defined as the design, facilitation, and direction of cognitive and social processes for the purpose of realizing personally meaningful and educational worthwhile learning outcomes.</p>			
+        </div>
+        <!-- Teaching Presence: Design and Organization -->
+<div class="col-md-12 card">
+    <div class="card-header" id="headingDesignOrganization" data-bs-toggle="collapse" data-bs-target="#collapseDesignOrganization" aria-expanded="false" aria-controls="collapseDesignOrganization" style="cursor: pointer;">
+        <h3 class="mb-0">Design and Organization</h3>
+    </div>
+    <div id="collapseDesignOrganization" class="collapse" aria-labelledby="headingDesignOrganization" data-bs-parent="#accordionExample">
+        <div class="card-body">
+            <div id="design-organization"></div> <!-- Collapsible content will be injected here -->
+        </div>
+    </div>
+</div>
+
+<!-- Teaching Presence: Facilitating Discourse -->
+<div class="col-md-12 card">
+    <div class="card-header" id="headingFacilitatingDiscourse" data-bs-toggle="collapse" data-bs-target="#collapseFacilitatingDiscourse" aria-expanded="false" aria-controls="collapseFacilitatingDiscourse" style="cursor: pointer;">
+        <h3 class="mb-0">Facilitating Discourse</h3>
+    </div>
+    <div id="collapseFacilitatingDiscourse" class="collapse" aria-labelledby="headingFacilitatingDiscourse" data-bs-parent="#accordionExample">
+        <div class="card-body">
+            <div id="facilitating-discourse"></div> <!-- Collapsible content will be injected here -->
+        </div>
+    </div>
+</div>
+
+<!-- Teaching Presence: Direct Instruction -->
+<div class="col-md-12 card">
+    <div class="card-header" id="headingDirectInstruction" data-bs-toggle="collapse" data-bs-target="#collapseDirectInstruction" aria-expanded="false" aria-controls="collapseDirectInstruction" style="cursor: pointer;">
+        <h3 class="mb-0">Direct Instruction</h3>
+    </div>
+    <div id="collapseDirectInstruction" class="collapse" aria-labelledby="headingDirectInstruction" data-bs-parent="#accordionExample">
+        <div class="card-body">
+            <div id="direct-instruction"></div> <!-- Collapsible content will be injected here -->
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <div class="col-md-4 card">
+        <div class="col-md-12">
+            <h2><a href="#">Cognitive Presence</a></h2>
+			<p>Cognitive presence is the extent to which the participants in any particular configuration of a community of inquiry are able to construct meaning through sustained communication.</p>
+        </div>
+        <!-- Cognitive Presence: Triggering Event -->
+<div class="col-md-12 card">
+    <div class="card-header" id="headingTriggeringEvent" data-bs-toggle="collapse" data-bs-target="#collapseTriggeringEvent" aria-expanded="false" aria-controls="collapseTriggeringEvent" style="cursor: pointer;">
+        <h3 class="mb-0">Triggering Event</h3>
+    </div>
+    <div id="collapseTriggeringEvent" class="collapse" aria-labelledby="headingTriggeringEvent" data-bs-parent="#accordionExample">
+        <div class="card-body">
+            <div id="triggering-event"></div> <!-- Collapsible content will be injected here -->
+        </div>
+    </div>
+</div>
+
+<!-- Cognitive Presence: Exploration -->
+<div class="col-md-12 card">
+    <div class="card-header" id="headingExploration" data-bs-toggle="collapse" data-bs-target="#collapseExploration" aria-expanded="false" aria-controls="collapseExploration" style="cursor: pointer;">
+        <h3 class="mb-0">Exploration</h3>
+    </div>
+    <div id="collapseExploration" class="collapse" aria-labelledby="headingExploration" data-bs-parent="#accordionExample">
+        <div class="card-body">
+            <div id="exploration"></div> <!-- Collapsible content will be injected here -->
+        </div>
+    </div>
+</div>
+
+<!-- Cognitive Presence: Integration -->
+<div class="col-md-12 card">
+    <div class="card-header" id="headingIntegration" data-bs-toggle="collapse" data-bs-target="#collapseIntegration" aria-expanded="false" aria-controls="collapseIntegration" style="cursor: pointer;">
+        <h3 class="mb-0">Integration</h3>
+    </div>
+    <div id="collapseIntegration" class="collapse" aria-labelledby="headingIntegration" data-bs-parent="#accordionExample">
+        <div class="card-body">
+            <div id="integration"></div> <!-- Collapsible content will be injected here -->
+        </div>
+    </div>
+</div>
+
+<!-- Cognitive Presence: Resolution -->
+<div class="col-md-12 card">
+    <div class="card-header" id="headingResolution" data-bs-toggle="collapse" data-bs-target="#collapseResolution" aria-expanded="false" aria-controls="collapseResolution" style="cursor: pointer;">
+        <h3 class="mb-0">Resolution</h3>
+    </div>
+    <div id="collapseResolution" class="collapse" aria-labelledby="headingResolution" data-bs-parent="#accordionExample">
+        <div class="card-body">
+            <div id="resolution"></div> <!-- Collapsible content will be injected here -->
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+<div class="col-md-12">
+    <h3>Your Selected Approaches</h3>
+    <div id="selected-approaches"></div> <!-- This will display the user's selected list -->
+    <button id="copy-btn" class="btn btn-primary mt-2">Copy to Clipboard</button>
+</div>
+
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      
+    </ul>
+    <p class="text-center text-muted">Contact Researcher</p>
+  </footer>
+</div>
+ 
+
+</body>
+</html>

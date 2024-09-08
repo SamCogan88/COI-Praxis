@@ -1,0 +1,54 @@
+.teaching{	
+	border: 4px solid #999;
+	border-left:0px;
+	border-right:0px;
+	background:#8434a5;
+
+}
+
+h2{
+	font-size:180%;
+	text-align:center;
+}
+.social{	
+	
+	background:#27ae60;
+}
+.cognitive{
+	border: 4px solid #999;	
+	border-left:0px;
+	background:#2980b9;
+}
+
+div .labels{
+	background:white;
+}
+.teaching,.social,.cognitive{
+	min-height:280px;
+	margin-top:5px;
+	color:#fff;
+}
+.teaching a,.social a,.cognitive a{
+	color:#fff;	
+	padding-right:3px;
+}
+@media (max-width: 767px) { 
+	.teaching,.social,.cognitive{
+		border:none;
+	}
+}
+.explainer{
+	padding-right:12px;
+	font-size:130%;	
+}
+li{
+	font-size:110%;
+}
+h5 a{
+	color:white;
+}
+.presenceExp{		
+	font-size:150%;
+	font-weight:400;
+}
+
