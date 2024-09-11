@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Populate Teaching Presence
             document.getElementById('design-organization').innerHTML = generateApproachList(data['Teaching Presence']?.['Design and Organization'], 'Teaching Presence', 'Design and Organization');
-            document.getElementById('facilitating-discourse').innerHTML = generateApproachList(data['Teaching Presence']?.['Facilitating Discourse'], 'Teaching Presence', 'Facilitating Discourse');
+            document.getElementById('facilitation').innerHTML = generateApproachList(data['Teaching Presence']?.['Facilitation'], 'Teaching Presence', 'Facilitation');
             document.getElementById('direct-instruction').innerHTML = generateApproachList(data['Teaching Presence']?.['Direct Instruction'], 'Teaching Presence', 'Direct Instruction');
 
             // Populate Cognitive Presence
