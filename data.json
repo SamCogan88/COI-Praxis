@@ -24,6 +24,7 @@
     },
     "Group Cohesion": {
       "Approaches": [
+        "Allow learners to self select into assessment groups based on topics that are common interests. This may require learners to come up with topics themselves and promote it to the wider group",
         "Encouraging Empathic Projection: Instructing learners to project personal characteristics into their joint pursuit of learning outcomes, fostering group identity.",
         "Creating a sense of community.",
         "Encouraging collaborative group projects and the use of collaboration tools.",
@@ -37,6 +38,8 @@
   "Teaching Presence": {
     "Design and Organization": {
       "Approaches": [
+        "Set expectations for how learners will respond/ask qs/communicate (eg hands up, use of chat, use of mic, use of QA features) at the beginning of the course, and reset expectations whenever conversation/questions die down",
+        "Provide opportunities both in and out of class for learners to showcase their work and receive quick feedback on the major points of improvement. In class breakout rooms and screensharing can be used effectively, outside of class the VLE can be used to provide quick feedback",
         "Building Trust and Comfort in Online Discussions: Designing ice-breaking activities and setting a comfortable online environment.",
         "Addressing Emotional Issues: Preparing learners to cope with emotional issues arising in online learning.",
         "Structuring online learning resources to be easily accessible.",
@@ -50,6 +53,8 @@
     },
     "Facilitation": {
       "Approaches": [
+        "Post accessible and well produced shortform content for learners to engage with such as YouTube videos/clips or short articles with interesting and current takeaways",
+        "Ask specific questions during demonstrations such as 'does anyone see another way to do this', or 'do you see any issues with this approach'",
         "Use instant feedback/polling tools such as Mentimeter, Vevox etc to pose questions that invite dialog",
         "Developing Social Confidence: Fostering a disposition among learners to read and understand messages, thereby facilitating effective discourse.",
         "Providing relevant individual and group feedback in a timely manner.",
@@ -81,6 +86,8 @@
   "Cognitive Presence": {
     "Triggering Event": {
       "Approaches": [
+        "Allow for assessment that is useful for the learner to own outside of the classroom, eg assessment that allows for CV or Portfolio building, assessment that encourages learners to learn new skills of their choosing and reflect upon them",
+        "Allow learners to pick the 'problems' that most interest them. These can be used in class discussions and even in assessment",
         "Allow learner's to choose their own topics for assessment to ensure interest",
         "Providing opportunities for higher order and experiential learning to engage students.",
         "Assign reflective writing tasks based on film clip analysis, encouraging students to integrate what they have learned."
@@ -98,6 +105,7 @@
     },
     "Integration": {
       "Approaches": [
+        "Allow students to work through ill defined problems individually or in small groups in class. Allow learners take control of the explanation by giving presentation rights",
         "Ask students to explain code/projects/topics to build their confidence and keep them attentive.",
         "Creating opportunities for students to solve their own problems and make choices in their learning.",
         "Reflect on and integrate the effectiveness of feedback strategies using teaching and social presence.",
