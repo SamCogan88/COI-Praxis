@@ -2,6 +2,7 @@
   "Social Presence": {
     "Emotional Expression": {
       "Approaches": [
+        "Encourage students to turn on their video/webcam during class.",
         "Addressing Emotional Issues: Recognizing and managing emotional challenges in online learning, like intimidation or self-doubt.",
         "Creating Supportive Environments: Establishing virtual spaces for learners to share concerns and emotions.",
         "Encouraging personal connections and sharing stories.",
@@ -49,6 +50,7 @@
     },
     "Facilitation": {
       "Approaches": [
+        "Use instant feedback/polling tools such as Mentimeter, Vevox etc to pose questions that invite dialog",
         "Developing Social Confidence: Fostering a disposition among learners to read and understand messages, thereby facilitating effective discourse.",
         "Providing relevant individual and group feedback in a timely manner.",
         "Involving students who are hesitant to participate, using structured group work.",
@@ -63,6 +65,7 @@
     },
     "Direct Instruction": {
       "Approaches": [
+        "Incorporate short quizzes with instant feedback",
         "Promoting Help-Seeking Culture: Encouraging students to seek assistance and learn independently.",
         "Modeling desired behaviors and interaction styles in online discussions.",
         "Assigning meaningful work and using technology intentionally.",
@@ -78,6 +81,7 @@
   "Cognitive Presence": {
     "Triggering Event": {
       "Approaches": [
+        "Allow learner's to choose their own topics for assessment to ensure interest",
         "Providing opportunities for higher order and experiential learning to engage students.",
         "Assign reflective writing tasks based on film clip analysis, encouraging students to integrate what they have learned."
       ]
@@ -94,6 +98,7 @@
     },
     "Integration": {
       "Approaches": [
+        "Ask students to explain code/projects/topics to build their confidence and keep them attentive.",
         "Creating opportunities for students to solve their own problems and make choices in their learning.",
         "Reflect on and integrate the effectiveness of feedback strategies using teaching and social presence.",
         "Involving students in collective knowledge construction and discourse in synchronous and asynchronous settings.",
