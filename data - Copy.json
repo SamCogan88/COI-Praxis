@@ -1,0 +1,129 @@
+{
+  "Social Presence": {
+    "Emotional Expression": {
+      "Approaches": [        
+        "Addressing Emotional Issues: Recognizing and managing emotional challenges in online learning, like intimidation or self-doubt.",
+        "Creating Supportive Environments: Establishing virtual spaces for learners to share concerns and emotions.",
+        "Encouraging personal connections and sharing stories.",
+        "Using humor and personal stories to engage students.",
+        "Using expressions of emotions, like emojis, in communications.",
+        "Sharing personal stories and professional experiences to connect with students on a more personal level."
+      ]
+    },
+    "Open Communication": {
+      "Approaches": [
+        "Encourage students to turn on their video/webcam during class.",
+        "Building Trust and Comfort in Online Discussions: Using ice-breaking activities and encouraging empathic projection to enhance communication.",
+        "Developing Social Confidence: Encouraging learners to project their personal characteristics into their communication, facilitating open exchanges.",
+        "Making human connections early in the course to promote comfortable communication.",
+        "Using synchronous sessions and video walk-throughs for clearer and more personable announcements.",
+        "Engaging in open communication with other teachers in forums and chat rooms to collaboratively refine feedback strategies.",
+        "Engaging students in open and frequent communication by addressing students by name and allowing options for addressing the instructor.",
+        "Encouraging open communication and providing platforms for students to share experiences, enhancing interaction."
+      ]
+    },
+    "Group Cohesion": {
+      "Approaches": [
+        "Allow learners to self select into assessment groups based on topics that are common interests. This may require learners to come up with topics themselves and promote it to the wider group",
+        "Encouraging Empathic Projection: Instructing learners to project personal characteristics into their joint pursuit of learning outcomes, fostering group identity.",
+        "Creating a sense of community.",
+        "Encouraging collaborative group projects and the use of collaboration tools.",
+        "Fostering group cohesion among teachers through shared experiences and solutions in improving feedback methods.",
+        "Facilitating open discussions and sharing in cross-group settings to promote group cohesion.",
+        "Developing partnerships within the learning community to enhance group cohesion, involving students responding to each other's posts.",
+        "Designing activities in synchronous webinars aimed at fostering group cohesion."
+      ]
+    }
+  },
+  "Teaching Presence": {
+    "Design and Organization": {
+      "Approaches": [
+        "Set expectations for how learners will respond/ask qs/communicate (eg hands up, use of chat, use of mic, use of QA features) at the beginning of the course, and reset expectations whenever conversation/questions die down",
+        "Provide opportunities both in and out of class for learners to showcase their work and receive quick feedback on the major points of improvement. In class breakout rooms and screensharing can be used effectively, outside of class the VLE can be used to provide quick feedback",
+        "Building Trust and Comfort in Online Discussions: Designing ice-breaking activities and setting a comfortable online environment.",
+        "Addressing Emotional Issues: Preparing learners to cope with emotional issues arising in online learning.",
+        "Structuring online learning resources to be easily accessible.",
+        "Addressing universal design for learning principles in all created materials.",
+        "Being well-prepared and having backup plans for technological issues.",
+        "Design and develop online activities, such as deliberate practice tasks, to support instructional goals.",
+        "Clearly articulate course goals, objectives, and evaluation criteria.",
+        "Ensure internet links, videos, and other technologies are functioning properly and frequently updated.",
+        "Develop course overviews."
+      ]
+    },
+    "Facilitation": {
+      "Approaches": [
+        "Post accessible and well produced shortform content for learners to engage with such as YouTube videos/clips or short articles with interesting and current takeaways",
+        "Ask specific questions during demonstrations such as 'does anyone see another way to do this', or 'do you see any issues with this approach'",
+        "Use instant feedback/polling tools such as Mentimeter, Vevox etc to pose questions that invite dialog",
+        "Developing Social Confidence: Fostering a disposition among learners to read and understand messages, thereby facilitating effective discourse.",
+        "Providing relevant individual and group feedback in a timely manner.",
+        "Involving students who are hesitant to participate, using structured group work.",
+        "Actively moderate and facilitate online discussions, checking students' reflective texts regularly to maintain teaching presence.",
+        "Engaging students in instructor/student-initiated question-and-answer sessions, open discussions, and sharing.",
+        "Instructing students to encourage further discussion by asking questions or offering unique perspectives.",
+        "Facilitating discussions that encourage knowledge sharing and integration among students.",
+        "Use software like Elluminate for monthly real-time conferencing sessions.",
+        "Contribute to discussion forums throughout the week and launch threads.",
+        "Provide suggested due dates for initial postings to promote mid-week engagement."
+      ]
+    },
+    "Direct Instruction": {
+      "Approaches": [
+        "Incorporate short quizzes with instant feedback",
+        "Promoting Help-Seeking Culture: Encouraging students to seek assistance and learn independently.",
+        "Modeling desired behaviors and interaction styles in online discussions.",
+        "Assigning meaningful work and using technology intentionally.",
+        "Providing specific, direct instruction through detailed feedback on both micro and macro levels.",
+        "Offering live demonstrations of engineering drawing and individual/group practice sessions.",
+        "Providing timely and frequent feedback to students.",
+        "Post introductions and expectations before students access the course.",
+        "Provide frequent feedback and progress reports on postings.",
+        "Promptly answer emails from students."
+      ]
+    }
+  },
+  "Cognitive Presence": {
+    "Triggering Event": {
+      "Approaches": [
+        "Allow for assessment that is useful for the learner to own outside of the classroom, eg assessment that allows for CV or Portfolio building, assessment that encourages learners to learn new skills of their choosing and reflect upon them",
+        "Allow learners to pick the 'problems' that most interest them. These can be used in class discussions and even in assessment",
+        "Allow learner's to choose their own topics for assessment to ensure interest",
+        "Providing opportunities for higher order and experiential learning to engage students.",
+        "Assign reflective writing tasks based on film clip analysis, encouraging students to integrate what they have learned."
+      ]
+    },
+    "Exploration": {
+      "Approaches": [
+        "Using Cognitive Maps: Introducing and guiding the use of cognitive maps to explore learning paths and options.",
+        "Encouraging students to search out and post resources, and to engage in creative activities.",
+        "Assigning students to create personal maps and use those for navigating the learning landscape.",
+        "Creating opportunities for students to explore concepts before being graded, promoting exploration in learning.",
+        "In small groups, students create an overview of stimulus material, encouraging exploration of the topic.",
+        "Providing opportunities for student-to-student and student-to-instructor interactions."
+      ]
+    },
+    "Integration": {
+      "Approaches": [
+        "Allow students to work through ill defined problems individually or in small groups in class. Allow learners take control of the explanation by giving presentation rights",
+        "Ask students to explain code/projects/topics to build their confidence and keep them attentive.",
+        "Creating opportunities for students to solve their own problems and make choices in their learning.",
+        "Reflect on and integrate the effectiveness of feedback strategies using teaching and social presence.",
+        "Involving students in collective knowledge construction and discourse in synchronous and asynchronous settings.",
+        "Pose issues without clear solutions, facilitating integration of knowledge through engagement.",
+        "Instructor selects inquiry questions to stimulate further dialogue and integrate ideas and perspectives.",
+        "Supporting abstract conceptualization during the explaining phase through readings and papers."
+      ]
+    },
+    "Resolution": {
+      "Approaches": [
+        "Using effective assessment tools and rubrics so students understand how they are being assessed.",
+        "Utilizing assessment tasks that allow students to apply and demonstrate learning in practical contexts.",
+        "Engage in activities that encourage students to reflect and apply their learning.",
+        "Experts join in the dialogue, aiding in the resolution of discussions and providing insights.",
+        "Supporting active experimentation by connecting instructional practices to real classroom experiences.",
+        "Facilitating online communication tools for joint observations and discussions."
+      ]
+    }
+  }
+}

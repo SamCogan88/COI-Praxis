@@ -1,129 +1,527 @@
 {
   "Social Presence": {
     "Emotional Expression": {
-      "Approaches": [        
-        "Addressing Emotional Issues: Recognizing and managing emotional challenges in online learning, like intimidation or self-doubt.",
-        "Creating Supportive Environments: Establishing virtual spaces for learners to share concerns and emotions.",
-        "Encouraging personal connections and sharing stories.",
-        "Using humor and personal stories to engage students.",
-        "Using expressions of emotions, like emojis, in communications.",
-        "Sharing personal stories and professional experiences to connect with students on a more personal level."
+      "Approaches": [
+        {
+          "Description": "Addressing Emotional Issues: Recognizing and managing emotional challenges in online learning, like intimidation or self-doubt.",
+          "Source": "A",
+          "Citation": "Peacock, S., & Cowan, J. (2016). From Presences to Linked Influences Within Communities of Inquiry. [Link](https://files.eric.ed.gov/fulltext/EJ1117447.pdf)"
+        },
+        {
+          "Description": "Creating Supportive Environments: Establishing virtual spaces for learners to share concerns and emotions.",
+          "Source": "A",
+          "Citation": "Peacock, S., & Cowan, J. (2016). From Presences to Linked Influences Within Communities of Inquiry. [Link](https://files.eric.ed.gov/fulltext/EJ1117447.pdf)"
+        },
+        {
+          "Description": "Encouraging personal connections and sharing stories.",
+          "Source": "A",
+          "Citation": "Dunlap, J., & Lowenthal, P. (2017). Structuring online learning resources to be easily accessible. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"
+        },
+        {
+          "Description": "Using humor and personal stories to engage students.",
+          "Source": "A",
+          "Citation": "Dunlap, J., & Lowenthal, P. (2017). Structuring online learning resources to be easily accessible. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"
+        },
+        {
+          "Description": "Use expressions of emotions, like emojis, in communications.",
+          "Source": "A",
+          "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
+        },
+        {
+          "Description": "Share personal stories and professional experiences to connect with students on a more personal level.",
+          "Source": "A",
+          "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
+        }
       ]
     },
-    "Open Communication": {
+	"Open Communication": {
       "Approaches": [
-        "Encourage students to turn on their video/webcam during class.",
-        "Building Trust and Comfort in Online Discussions: Using ice-breaking activities and encouraging empathic projection to enhance communication.",
-        "Developing Social Confidence: Encouraging learners to project their personal characteristics into their communication, facilitating open exchanges.",
-        "Making human connections early in the course to promote comfortable communication.",
-        "Using synchronous sessions and video walk-throughs for clearer and more personable announcements.",
-        "Engaging in open communication with other teachers in forums and chat rooms to collaboratively refine feedback strategies.",
-        "Engaging students in open and frequent communication by addressing students by name and allowing options for addressing the instructor.",
-        "Encouraging open communication and providing platforms for students to share experiences, enhancing interaction."
+	  {
+	  "Description": "When asking questions, give time for learners to contribute. This may take longer than in person sessions",
+          "Source": "B"
+	  },
+	  {
+		  "Description": "Give personal examples, and encourage students to contribute their own.",
+          "Source": "B"
+	  },
+        {
+          "Description": "Encourage students to turn on their video/webcam during class.",
+          "Source": "B"
+        },
+        {
+          "Description": "Building Trust and Comfort in Online Discussions: Using ice-breaking activities and encouraging empathic projection to enhance communication.",
+          "Source": "A",
+          "Citation": "Peacock, S., & Cowan, J. (2016). From Presences to Linked Influences Within Communities of Inquiry. [Link](https://files.eric.ed.gov/fulltext/EJ1117447.pdf)"
+        },
+        {
+          "Description": "Developing Social Confidence: Encouraging learners to project their personal characteristics into their communication, facilitating open exchanges.",
+          "Source": "A",
+          "Citation": "Peacock, S., & Cowan, J. (2016). From Presences to Linked Influences Within Communities of Inquiry. [Link](https://files.eric.ed.gov/fulltext/EJ1117447.pdf)"
+        },
+        {
+          "Description": "Making human connections early in the course to promote comfortable communication.",
+          "Source": "A",
+          "Citation": "Dunlap, J., & Lowenthal, P. (2017). Structuring online learning resources to be easily accessible. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"
+        },
+        {
+          "Description": "Using synchronous sessions and video walk-throughs for clearer and more personable announcements.",
+          "Source": "A",
+          "Citation": "Dunlap, J., & Lowenthal, P. (2017). Structuring online learning resources to be easily accessible. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"
+        },
+        {
+          "Description": "Engaging in open communication with other teachers in forums and chat rooms to collaboratively refine feedback strategies.",
+          "Source": "A",
+          "Citation": "Yang, S. (2015). Use of Feedback in Online Learning. [Link](https://www.sciencedirect.com/science/article/abs/pii/S0360131515300725)"
+        },
+        {
+          "Description": "Engaging students in open and frequent communication by addressing students by name and allowing options for addressing the instructor.",
+          "Source": "A",
+          "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
+        },
+        {
+          "Description": "Encouraging open communication and providing platforms for students to share experiences, enhancing interaction.",
+          "Source": "B"
+        },
+        {
+          "Description": "Contribute to discussion forums throughout the week and launch threads.",
+          "Source": "A",
+          "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
+        },
+        {
+          "Description": "Use short film clips for reflective writing exercises, ensuring relevance to the course themes.",
+          "Source": "A",
+          "Citation": "Chen, R. H. (2022). Facilitating Teaching Presence in Online Discussions. [Link](https://www.mdpi.com/2071-1050/14/3/1785)"
+        },
+        {
+          "Description": "Clearly articulate course goals, objectives, and evaluation criteria.",
+          "Source": "A",
+          "Citation": "Seckman, C. (n.d.). Effective Communication in Online Education."
+        },
+        {
+          "Description": "Provide frequent feedback and progress reports on participation and quality of postings.",
+          "Source": "A",
+          "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
+        },
+        {
+          "Description": "Using online platforms to facilitate ongoing discussions and reflections among students.",
+          "Source": "B"
+        },
+        {
+          "Description": "Foster open and supportive communication channels by encouraging feedback from students on the learning process.",
+          "Source": "B"
+        },
+        {
+          "Description": "Engage students in weekly reflections and group discussions to promote open communication and interaction.",
+          "Source": "B"
+        }
       ]
     },
-    "Group Cohesion": {
-      "Approaches": [
-        "Allow learners to self select into assessment groups based on topics that are common interests. This may require learners to come up with topics themselves and promote it to the wider group",
-        "Encouraging Empathic Projection: Instructing learners to project personal characteristics into their joint pursuit of learning outcomes, fostering group identity.",
-        "Creating a sense of community.",
-        "Encouraging collaborative group projects and the use of collaboration tools.",
-        "Fostering group cohesion among teachers through shared experiences and solutions in improving feedback methods.",
-        "Facilitating open discussions and sharing in cross-group settings to promote group cohesion.",
-        "Developing partnerships within the learning community to enhance group cohesion, involving students responding to each other's posts.",
-        "Designing activities in synchronous webinars aimed at fostering group cohesion."
-      ]
+	"Group Cohesion": {
+  "Approaches": [
+    {
+      "Description": "Allow learners to self-select into assessment groups based on topics that are common interests. This may require learners to come up with topics themselves and promote it to the wider group.",
+      "Source": "B"
+    },
+    {
+      "Description": "Encouraging Empathic Projection: Instructing learners to project personal characteristics into their joint pursuit of learning outcomes, fostering group identity.",
+      "Source": "A",
+      "Citation": "Peacock, S., & Cowan, J. (2016). From Presences to Linked Influences Within Communities of Inquiry. [Link](https://files.eric.ed.gov/fulltext/EJ1117447.pdf)"
+    },
+    {
+      "Description": "Creating a sense of community.",
+      "Source": "A",
+      "Citation": "Dunlap, J., & Lowenthal, P. (2017). Structuring online learning resources to be easily accessible. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"
+    },
+    {
+      "Description": "Encouraging collaborative group projects and the use of collaboration tools.",
+      "Source": "A",
+      "Citation": "Dunlap, J., & Lowenthal, P. (2017). Structuring online learning resources to be easily accessible. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"
+    },
+    {
+      "Description": "Fostering group cohesion among teachers through shared experiences and solutions in improving feedback methods.",
+      "Source": "A",
+      "Citation": "Yang, S. (2015). Use of Feedback in Online Learning. [Link](https://www.sciencedirect.com/science/article/abs/pii/S0360131515300725)"
+    },
+    {
+      "Description": "Facilitating open discussions and sharing in cross-group settings to promote group cohesion.",
+      "Source": "B"
+    },
+    {
+      "Description": "Developing partnerships within the learning community to enhance group cohesion, involving students responding to each other's posts.",
+      "Source": "A",
+      "Citation": "Chen, R. H. (2022). Facilitating Teaching Presence in Online Discussions. [Link](https://www.mdpi.com/2071-1050/14/3/1785)"
+    },
+    {
+      "Description": "Designing activities in synchronous webinars aimed at fostering group cohesion.",
+      "Source": "B"
+    },
+    {
+      "Description": "Form small groups based on students’ areas of specialization to work together online, supporting social presence and cognitive presence within the larger community of practice.",
+      "Source": "A",
+      "Citation": "Kumar, S., Dawson, K., Black, E. W., Cavanaugh, C., & Sessums, C. D. (2011). Use of technology in instructional design. [Link](https://www.erudit.org/en/journals/irrodl/2011-v12-n6-irrodl05121/1067481ar/)"
     }
+  ]
+}
+
   },
-  "Teaching Presence": {
-    "Design and Organization": {
-      "Approaches": [
-        "Set expectations for how learners will respond/ask qs/communicate (eg hands up, use of chat, use of mic, use of QA features) at the beginning of the course, and reset expectations whenever conversation/questions die down",
-        "Provide opportunities both in and out of class for learners to showcase their work and receive quick feedback on the major points of improvement. In class breakout rooms and screensharing can be used effectively, outside of class the VLE can be used to provide quick feedback",
-        "Building Trust and Comfort in Online Discussions: Designing ice-breaking activities and setting a comfortable online environment.",
-        "Addressing Emotional Issues: Preparing learners to cope with emotional issues arising in online learning.",
-        "Structuring online learning resources to be easily accessible.",
-        "Addressing universal design for learning principles in all created materials.",
-        "Being well-prepared and having backup plans for technological issues.",
-        "Design and develop online activities, such as deliberate practice tasks, to support instructional goals.",
-        "Clearly articulate course goals, objectives, and evaluation criteria.",
-        "Ensure internet links, videos, and other technologies are functioning properly and frequently updated.",
-        "Develop course overviews."
-      ]
+  "Teaching Presence":{
+  "Design and Organization": {
+  "Approaches": [
+    {
+      "Description": "Building Trust and Comfort in Online Discussions: Designing ice-breaking activities and setting a comfortable online environment.",
+      "Source": "A",
+      "Citation": "Peacock, S., & Cowan, J. (2016). From Presences to Linked Influences Within Communities of Inquiry. [Link](https://files.eric.ed.gov/fulltext/EJ1117447.pdf)"
     },
-    "Facilitation": {
-      "Approaches": [
-        "Post accessible and well produced shortform content for learners to engage with such as YouTube videos/clips or short articles with interesting and current takeaways",
-        "Ask specific questions during demonstrations such as 'does anyone see another way to do this', or 'do you see any issues with this approach'",
-        "Use instant feedback/polling tools such as Mentimeter, Vevox etc to pose questions that invite dialog",
-        "Developing Social Confidence: Fostering a disposition among learners to read and understand messages, thereby facilitating effective discourse.",
-        "Providing relevant individual and group feedback in a timely manner.",
-        "Involving students who are hesitant to participate, using structured group work.",
-        "Actively moderate and facilitate online discussions, checking students' reflective texts regularly to maintain teaching presence.",
-        "Engaging students in instructor/student-initiated question-and-answer sessions, open discussions, and sharing.",
-        "Instructing students to encourage further discussion by asking questions or offering unique perspectives.",
-        "Facilitating discussions that encourage knowledge sharing and integration among students.",
-        "Use software like Elluminate for monthly real-time conferencing sessions.",
-        "Contribute to discussion forums throughout the week and launch threads.",
-        "Provide suggested due dates for initial postings to promote mid-week engagement."
-      ]
+    {
+      "Description": "Structuring online learning resources to be easily accessible.",
+      "Source": "A",
+      "Citation": "Dunlap, J., & Lowenthal, P. (2017). Structuring online learning resources to be easily accessible. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"
     },
-    "Direct Instruction": {
-      "Approaches": [
-        "Incorporate short quizzes with instant feedback",
-        "Promoting Help-Seeking Culture: Encouraging students to seek assistance and learn independently.",
-        "Modeling desired behaviors and interaction styles in online discussions.",
-        "Assigning meaningful work and using technology intentionally.",
-        "Providing specific, direct instruction through detailed feedback on both micro and macro levels.",
-        "Offering live demonstrations of engineering drawing and individual/group practice sessions.",
-        "Providing timely and frequent feedback to students.",
-        "Post introductions and expectations before students access the course.",
-        "Provide frequent feedback and progress reports on postings.",
-        "Promptly answer emails from students."
-      ]
+    {
+      "Description": "Addressing universal design for learning principles in all created materials.",
+      "Source": "A",
+      "Citation": "Dunlap, J., & Lowenthal, P. (2017). Structuring online learning resources to be easily accessible. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"
+    },
+    {
+      "Description": "Being well-prepared and having backup plans for technological issues.",
+      "Source": "A",
+      "Citation": "Dunlap, J., & Lowenthal, P. (2017). Structuring online learning resources to be easily accessible. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"
+    },
+    {
+      "Description": "Use action logs to monitor and understand students' engagement with the feedback process, guiding the design of further instructional strategies.",
+      "Source": "A",
+      "Citation": "Yang, S. (2015). Use of Feedback in Online Learning. [Link](https://www.sciencedirect.com/science/article/abs/pii/S0360131515300725)"
+    },
+    {
+      "Description": "Incorporate multiple forms of synchronous and asynchronous interaction, frequent opportunities for reflection, support for various learning styles, multimedia resources, and multiple assessment formats.",
+      "Source": "A",
+      "Citation": "Kumar, S., Dawson, K., Black, E. W., Cavanaugh, C., & Sessums, C. D. (2011). Use of technology in instructional design. [Link](https://www.erudit.org/en/journals/irrodl/2011-v12-n6-irrodl05121/1067481ar/)"
+    },
+    {
+      "Description": "Conduct a summer seminar combining online activities and a campus-based experience to model teaching presence in a synchronous setting and to reinforce content learned.",
+      "Source": "A",
+      "Citation": "Kumar, S., Dawson, K., Black, E. W., Cavanaugh, C., & Sessums, C. D. (2011). Use of technology in instructional design. [Link](https://www.erudit.org/en/journals/irrodl/2011-v12-n6-irrodl05121/1067481ar/)"
+    },
+    {
+      "Description": "Design and develop online activities, such as deliberate practice tasks, to support the instructional goals of the course.",
+      "Source": "A",
+      "Citation": "Chen, R. H. (2022). Facilitating Teaching Presence in Online Discussions. [Link](https://www.mdpi.com/2071-1050/14/3/1785)"
+    },
+    {
+      "Description": "Conducting formative assessment of students' engineering drawing learning through various modes, including face-to-face on-site and blended synchronous online activities.",
+      "Source": "A",
+      "Citation": "Szeto, E. (2016). Effective Online Instruction Techniques. [Link](https://www.sciencedirect.com/science/article/abs/pii/S0360131514002358)"
+    },
+    {
+      "Description": "Develop course overviews.",
+      "Source": "A",
+      "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
+    },
+    {
+      "Description": "Structure collaborative learning activities.",
+      "Source": "A",
+      "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
+    },
+    {
+      "Description": "Incorporate audio and video content.",
+      "Source": "A",
+      "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
+    },
+    {
+      "Description": "Limit class size to maintain a manageable and effective learning environment.",
+      "Source": "A",
+      "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
+    },
+    {
+      "Description": "Utilize group work strategies and develop open-ended critical thinking discussion questions.",
+      "Source": "A",
+      "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
+    },
+    {
+      "Description": "Incorporate reflective activities and continuous, authentic assessment strategies.",
+      "Source": "A",
+      "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
+    },
+    {
+      "Description": "Providing concrete experiences in the experiencing phase through activities like viewing classroom videos and working with interactive tools.",
+      "Source": "A",
+      "Citation": "Dunlap, J., Verma, G., & Johnson, H. L. (2016). Kolb’s Experiential Learning in Online Interactions. [Link](https://link.springer.com/article/10.1007/s11528-016-0029-4)"
+    },
+    {
+      "Description": "Create opportunities for students to explore concepts before being graded, promoting exploration within the learning process.",
+      "Source": "B"
+    },
+    {
+      "Description": "Ensure interactive learning experiences to enhance teaching presence.",
+      "Source": "B"
+    },
+    {
+      "Description": "Summarize each discussion thread at the end of the week.",
+      "Source": "A",
+      "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
     }
+  ]
+},
+"Facilitation": {
+  "Approaches": [
+    {
+      "Description": "Developing Social Confidence: Fostering a disposition among learners to read and understand messages, thereby facilitating effective discourse.",
+      "Source": "A",
+      "Citation": "Peacock, S., & Cowan, J. (2016). From Presences to Linked Influences Within Communities of Inquiry. [Link](https://files.eric.ed.gov/fulltext/EJ1117447.pdf)"
+    },
+    {
+      "Description": "Providing relevant individual and group feedback in a timely manner.",
+      "Source": "A",
+      "Citation": "Dunlap, J., & Lowenthal, P. (2017). Structuring online learning resources to be easily accessible. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"
+    },
+    {
+      "Description": "Involving students who are hesitant to participate, using structured group work.",
+      "Source": "A",
+      "Citation": "Dunlap, J., & Lowenthal, P. (2017). Structuring online learning resources to be easily accessible. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"
+    },
+    {
+      "Description": "Employ these tools for collaborative discussions among teachers to share challenges and insights, thereby improving feedback methods and facilitating discourse.",
+      "Source": "A",
+      "Citation": "Yang, S. (2015). Use of Feedback in Online Learning. [Link](https://www.sciencedirect.com/science/article/abs/pii/S0360131515300725)"
+    },
+    {
+      "Description": "Use software like Elluminate for monthly real-time conferencing sessions on various topics, encouraging and modeling a critical approach to educational technology research.",
+      "Source": "A",
+      "Citation": "Kumar, S., Dawson, K., Black, E. W., Cavanaugh, C., & Sessums, C. D. (2011). Use of technology in instructional design. [Link](https://www.erudit.org/en/journals/irrodl/2011-v12-n6-irrodl05121/1067481ar/)"
+    },
+    {
+      "Description": "Actively moderate and facilitate online discussions, and check students' reflective texts regularly to maintain a consistent teaching presence.",
+      "Source": "A",
+      "Citation": "Chen, R. H. (2022). Facilitating Teaching Presence in Online Discussions. [Link](https://www.mdpi.com/2071-1050/14/3/1785)"
+    },
+    {
+      "Description": "Engaging students in instructor/student-initiated question-and-answer sessions, open discussions, and sharing, as well as providing feedback and critiques.",
+      "Source": "A",
+      "Citation": "Szeto, E. (2016). Effective Online Instruction Techniques. [Link](https://www.sciencedirect.com/science/article/abs/pii/S0360131514002358)"
+    },
+    {
+      "Description": "Contribute to discussion forums throughout the week and launch discussion threads.",
+      "Source": "A",
+      "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
+    },
+    {
+      "Description": "Providing opportunities for student-to-student and student-to-instructor interactions, especially during the explaining phase (abstract conceptualization) and applying phase (active experimentation) of Kolb’s cycle.",
+      "Source": "A",
+      "Citation": "Dunlap, J., Verma, G., & Johnson, H. L. (2016). Kolb’s Experiential Learning in Online Interactions. [Link](https://link.springer.com/article/10.1007/s11528-016-0029-4)"
+    },
+    {
+      "Description": "Language and cultural differences pose unique challenges, as well as opportunities for enriching online instruction.",
+      "Source": "B"
+    },
+    {
+      "Description": "Provide suggested due dates for initial postings to promote mid-week engagement.",
+      "Source": "A",
+      "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
+    }
+  ]
+},
+"Direct Instruction": {
+  "Approaches": [
+	{
+      "Description": "Incorporate short quizzes with immediate feedback",
+      "Source": "B"
+    },
+    {
+      "Description": "Promoting Help-Seeking Culture: Encouraging students to seek assistance and learn independently.",
+      "Source": "A",
+      "Citation": "Peacock, S., & Cowan, J. (2016). From Presences to Linked Influences Within Communities of Inquiry. [Link](https://files.eric.ed.gov/fulltext/EJ1117447.pdf)"
+    },
+    {
+      "Description": "Modeling desired behaviors and interaction styles in online discussions.",
+      "Source": "A",
+      "Citation": "Dunlap, J., & Lowenthal, P. (2017). Structuring online learning resources to be easily accessible. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"
+    },
+    {
+      "Description": "Assigning meaningful work and using technology intentionally.",
+      "Source": "A",
+      "Citation": "Dunlap, J., & Lowenthal, P. (2017). Structuring online learning resources to be easily accessible. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"
+    },
+    {
+      "Description": "Provide specific, direct instruction through detailed feedback on both micro (grammatical, spelling, style) and macro (text organization, development) levels.",
+      "Source": "A",
+      "Citation": "Yang, S. (2015). Use of Feedback in Online Learning. [Link](https://www.sciencedirect.com/science/article/abs/pii/S0360131515300725)"
+    },
+    {
+      "Description": "Focus on the application of learned knowledge in professional practice, asking students to apply what they have learned in real-world contexts.",
+      "Source": "A",
+      "Citation": "Kumar, S., Dawson, K., Black, E. W., Cavanaugh, C., & Sessums, C. D. (2011). Use of technology in instructional design. [Link](https://www.erudit.org/en/journals/irrodl/2011-v12-n6-irrodl05121/1067481ar/)"
+    },
+    {
+      "Description": "Use short film clips from platforms like VoiceTube for reflective writing exercises, ensuring relevance to the course's themes. This approach aids in language understanding and is particularly beneficial for students with lower proficiency.",
+      "Source": "A",
+      "Citation": "Chen, R. H. (2022). Facilitating Teaching Presence in Online Discussions. [Link](https://www.mdpi.com/2071-1050/14/3/1785)"
+    },
+    {
+      "Description": "Offering live demonstrations of engineering drawing and individual/group practice sessions.",
+      "Source": "A",
+      "Citation": "Szeto, E. (2016). Effective Online Instruction Techniques. [Link](https://www.sciencedirect.com/science/article/abs/pii/S0360131514002358)"
+    },
+    {
+      "Description": "Post introductions and expectations documents before students access the course.",
+      "Source": "A",
+      "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
+    },
+    {
+      "Description": "Providing timely and frequent feedback to students.",
+      "Source": "B"
+    },
+    {
+      "Description": "Grading students’ work and providing individual comments after the completion of forum activities, although not participating publicly in the forum.",
+      "Source": "A",
+      "Citation": "Stewart, M. K. (2016). Effective Online Discussions. [Link](https://www.sciencedirect.com/science/article/pii/S8755461516300603)"
+    },
+    {
+      "Description": "Promptly answer emails from students.",
+      "Source": "A",
+      "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
+    },
+    {
+      "Description": "Provide frequent feedback and progress reports on postings.",
+      "Source": "A",
+      "Citation": "Lowenthal, P., & Parscal, T. (2015). Teaching Presence Online Facilitates Meaningful Learning. [Link](https://www.researchgate.net/publication/265376234_Teaching_Presence_Online_Facilitates_Meaningful_Learning)"
+    },
+    {
+      "Description": "Provide individual and group feedback that is constructive and supportive, promoting student learning and engagement.",
+      "Source": "B"
+    },
+    {
+      "Description": "Create opportunities for students to explain their understanding through assignments and discussions.",
+      "Source": "B"
+    }
+  ]
+}
   },
-  "Cognitive Presence": {
-    "Triggering Event": {
-      "Approaches": [
-        "Allow for assessment that is useful for the learner to own outside of the classroom, eg assessment that allows for CV or Portfolio building, assessment that encourages learners to learn new skills of their choosing and reflect upon them",
-        "Allow learners to pick the 'problems' that most interest them. These can be used in class discussions and even in assessment",
-        "Allow learner's to choose their own topics for assessment to ensure interest",
-        "Providing opportunities for higher order and experiential learning to engage students.",
-        "Assign reflective writing tasks based on film clip analysis, encouraging students to integrate what they have learned."
-      ]
+  "Cognitive Presence":{
+"Triggering Event": {
+  "Approaches": [
+    {
+      "Description": "Providing opportunities for higher order and experiential learning to engage students.",
+      "Source": "A",
+      "Citation": "Dunlap, J., & Lowenthal, P. (2018). Structuring Experiential Learning in Online Environments. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"
     },
-    "Exploration": {
-      "Approaches": [
-        "Using Cognitive Maps: Introducing and guiding the use of cognitive maps to explore learning paths and options.",
-        "Encouraging students to search out and post resources, and to engage in creative activities.",
-        "Assigning students to create personal maps and use those for navigating the learning landscape.",
-        "Creating opportunities for students to explore concepts before being graded, promoting exploration in learning.",
-        "In small groups, students create an overview of stimulus material, encouraging exploration of the topic.",
-        "Providing opportunities for student-to-student and student-to-instructor interactions."
-      ]
-    },
-    "Integration": {
-      "Approaches": [
-        "Allow students to work through ill defined problems individually or in small groups in class. Allow learners take control of the explanation by giving presentation rights",
-        "Ask students to explain code/projects/topics to build their confidence and keep them attentive.",
-        "Creating opportunities for students to solve their own problems and make choices in their learning.",
-        "Reflect on and integrate the effectiveness of feedback strategies using teaching and social presence.",
-        "Involving students in collective knowledge construction and discourse in synchronous and asynchronous settings.",
-        "Pose issues without clear solutions, facilitating integration of knowledge through engagement.",
-        "Instructor selects inquiry questions to stimulate further dialogue and integrate ideas and perspectives.",
-        "Supporting abstract conceptualization during the explaining phase through readings and papers."
-      ]
-    },
-    "Resolution": {
-      "Approaches": [
-        "Using effective assessment tools and rubrics so students understand how they are being assessed.",
-        "Utilizing assessment tasks that allow students to apply and demonstrate learning in practical contexts.",
-        "Engage in activities that encourage students to reflect and apply their learning.",
-        "Experts join in the dialogue, aiding in the resolution of discussions and providing insights.",
-        "Supporting active experimentation by connecting instructional practices to real classroom experiences.",
-        "Facilitating online communication tools for joint observations and discussions."
-      ]
+    {
+      "Description": "Students introduce themselves to the larger group, respond to peers, and read some stimulus text. This phase initiates the cognitive process by engaging with the material and peers.",
+      "Source": "A",
+      "Citation": "Redmond, P. (2016). Engaging Cognitive Presence in Online Discussions. [Link](https://research.usq.edu.au/download/da39d6dae51dce7af2d74e206fc1c8fe6341a9bd3e913cb8eb086ecd05c071ce/204904/Redmond_ELDM_v11n1_AV.pdf)"
     }
-  }
+  ]
+},
+"Exploration": {
+  "Approaches": [
+    {
+      "Description": "Using Cognitive Maps: Introducing and guiding the use of cognitive maps to explore learning paths and options.",
+      "Source": "A",
+      "Citation": "Peacock, S., & Cowan, J. (2016). From Presences to Linked Influences Within Communities of Inquiry. [Link](https://files.eric.ed.gov/fulltext/EJ1117447.pdf)"
+    },
+    {
+      "Description": "Assembling Personal Maps: Encouraging learners to create their own cognitive maps to navigate the learning landscape.",
+      "Source": "A",
+      "Citation": "Peacock, S., & Cowan, J. (2016). From Presences to Linked Influences Within Communities of Inquiry. [Link](https://files.eric.ed.gov/fulltext/EJ1117447.pdf)"
+    },
+    {
+      "Description": "Encouraging students to search out and post resources, and to engage in creative activities.",
+      "Source": "A",
+      "Citation": "Dunlap, J., & Lowenthal, P. (2017). Structuring online learning resources to be easily accessible. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"
+    },
+    {
+      "Description": "Create opportunities for students to explore concepts before being graded, promoting exploration within the learning process.",
+      "Source": "B"
+    },
+    {
+      "Description": "In small groups, students create an overview of the stimulus material, including pedagogical issues. This activity encourages exploration of the topic and sharing of diverse perspectives.",
+      "Source": "A",
+      "Citation": "Redmond, P. (2016). Engaging Cognitive Presence in Online Discussions. [Link](https://research.usq.edu.au/download/da39d6dae51dce7af2d74e206fc1c8fe6341a9bd3e913cb8eb086ecd05c071ce/204904/Redmond_ELDM_v11n1_AV.pdf)"
+    },
+    {
+      "Description": "Providing concrete experiences in the experiencing phase through activities like viewing classroom videos and working with interactive tools.",
+      "Source": "A",
+      "Citation": "Dunlap, J., Verma, G., & Johnson, H. L. (2016). Kolb’s Experiential Learning in Online Interactions. [Link](https://link.springer.com/article/10.1007/s11528-016-0029-4)"
+    }
+  ]
+},
+"Integration": {
+  "Approaches": [
+	{
+      "Description": "Ask students to explain their solutions/approaches to build their confidence and keep them attentive.",
+      "Source": "B"   
+    },
+    {
+      "Description": "Creating opportunities for students to solve their own problems and make choices in their learning.",
+      "Source": "A",
+	  "Citation": "Dunlap, J., & Lowenthal, P. (2018). Structuring Experiential Learning in Online Environments. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"    
+    },
+    {
+      "Description": "Reflect on and integrate the effectiveness of feedback strategies, using teaching and social presence as support for cognitive development in feedback practice.",
+      "Source": "A",
+      "Citation": "Yang, S. (2015). Use of Feedback in Online Learning. [Link](https://www.sciencedirect.com/science/article/abs/pii/S0360131515300725)"
+    },
+    {
+      "Description": "Involve students in the collective construction of knowledge through discourse in various asynchronous and synchronous learning environments, with an emphasis on applying this knowledge in professional practice.",
+      "Source": "A",
+      "Citation": "Kumar, S., Dawson, K., Black, E. W., Cavanaugh, C., & Sessums, C. D. (2011). Use of technology in instructional design. [Link](https://www.erudit.org/en/journals/irrodl/2011-v12-n6-irrodl05121/1067481ar/)"
+    },
+    {
+      "Description": "Assign reflective writing tasks based on film clip analysis, encouraging students to integrate what they have learned and apply it to their writing.",
+      "Source": "A",
+      "Citation": "Chen, R. H. (2022). Facilitating Teaching Presence in Online Discussions. [Link](https://www.mdpi.com/2071-1050/14/3/1785)"
+    },
+    {
+      "Description": "Facilitating discussions that encourage knowledge sharing and integration among students.",
+      "Source": "A",
+      "Citation": "Szeto, E. (2016). Effective Online Instruction Techniques. [Link](https://www.sciencedirect.com/science/article/abs/pii/S0360131514002358)"
+    },
+    {
+      "Description": "Pose issues without clear solutions, facilitating the integration of knowledge through engagement with diverse viewpoints.",
+      "Source": "A",
+      "Citation": "Stewart, M. K. (2016). Effective Online Discussions. [Link](https://www.sciencedirect.com/science/article/pii/S8755461516300603)"
+    },
+    {
+      "Description": "Implement activities that encourage students to reflect on and apply their learning.",
+      "Source": "B"
+    },
+    {
+      "Description": "The instructor selects inquiry questions to stimulate further dialogue, promoting the integration of ideas and perspectives identified by the student.",
+      "Source": "A",
+      "Citation": "Redmond, P. (2016). Engaging Cognitive Presence in Online Discussions. [Link](https://research.usq.edu.au/download/da39d6dae51dce7af2d74e206fc1c8fe6341a9bd3e913cb8eb086ecd05c071ce/204904/Redmond_ELDM_v11n1_AV.pdf)"
+    },
+    {
+      "Description": "Supporting abstract conceptualization during the explaining phase through lectures, position papers, model building, and foundational readings.",
+      "Source": "A",
+      "Citation": "Dunlap, J., Verma, G., & Johnson, H. L. (2016). Kolb’s Experiential Learning in Online Interactions. [Link](https://link.springer.com/article/10.1007/s11528-016-0029-4)"
+    },
+    {
+      "Description": "Enabling active experimentation in the applying phase by connecting instructional practices to real classroom experiences and observations.",
+      "Source": "A",
+      "Citation": "Dunlap, J., Verma, G., & Johnson, H. L. (2016). Kolb’s Experiential Learning in Online Interactions. [Link](https://link.springer.com/article/10.1007/s11528-016-0029-4)"
+    }
+  ]
+},
+"Resolution": {
+  "Approaches": [
+    {
+      "Description": "Using effective assessment tools and rubrics so students understand how they are being assessed.",
+      "Source": "A",
+      "Citation": "Dunlap, J., & Lowenthal, P. (2018). Structuring online assessments. [Link](https://pdfs.semanticscholar.org/7d32/24944d6155f1b710b2914de5ab142b90ec86.pdf)"
+    },
+    {
+      "Description": "Utilizing assessment tasks that allow students to apply and demonstrate their learning in practical contexts.",
+      "Source": "A",
+      "Citation": "Szeto, E. (2016). Effective Online Instruction Techniques. [Link](https://www.sciencedirect.com/science/article/abs/pii/S0360131514002358)"
+    },
+    {
+      "Description": "Experts join in the dialogue, aiding in the resolution of the discussion by providing additional insights and expertise.",
+      "Source": "A",
+      "Citation": "Redmond, P. (2016). Engaging Cognitive Presence in Online Discussions. [Link](https://research.usq.edu.au/download/da39d6dae51dce7af2d74e206fc1c8fe6341a9bd3e913cb8eb086ecd05c071ce/204904/Redmond_ELDM_v11n1_AV.pdf)"
+    }
+  ]
+}
+
+
+
+ }
 }
