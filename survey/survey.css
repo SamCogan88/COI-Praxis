@@ -1,0 +1,11 @@
+:root { color-scheme: light; }
+body { font-family: "DM Sans", sans-serif; }
+.font-display { font-family: "Fraunces", serif; }
+.intro-gradient { background: radial-gradient(circle at 85% 10%, rgba(20, 184, 166, .15), transparent 28rem), #fff; }
+.rating-option input { position: absolute; opacity: 0; pointer-events: none; }
+.rating-option span { display: grid; width: 2.75rem; height: 2.75rem; place-items: center; border: 1px solid #cbd5e1; border-radius: .8rem; background: #fff; color: #475569; font-weight: 700; cursor: pointer; transition: .15s ease; }
+.rating-option input:hover + span { border-color: #0f766e; color: #0f766e; }
+.rating-option input:focus-visible + span { outline: 3px solid #bae6fd; outline-offset: 2px; }
+.rating-option input:checked + span { border-color: #17324d; background: #17324d; color: #fff; box-shadow: 0 4px 12px rgba(23, 50, 77, .2); }
+.question-card:has(input:checked) { border-color: #99f6e4; background: rgba(240, 253, 250, .45); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }

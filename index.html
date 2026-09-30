@@ -1,213 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Community of Inquiry - Praxis Framework</title>
-  <!-- Bootstrap CSS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore practical approaches for strengthening teaching, social and cognitive presence.">
+  <title>Community of Inquiry Praxis Framework</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { ink: '#17324d', cream: '#f7f5ef', teal: '#0f766e', sky: '#2563a6', plum: '#76517c' }, boxShadow: { soft: '0 18px 50px rgba(23, 50, 77, .10)' } } } };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
- <script src="script.js"></script>
-  <script src="js/styleswitcher.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="style.css" title="default" />
-		<link rel="alternate stylesheet" type="text/css" href="darkStyle.css" title="alternate" />
-  <style>
-  .container{
-	max-width: 1920px;
-  }
-  .hidden{
-	display:none;
-  }
-  
-  </style>
+  <script src="script.js" defer></script>
 </head>
-<body>
-	<header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="../">COI Praxis Framework</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="./survey/">|&nbsp; <u><b>Self Reflection Survey</b></u></a>
-        </li>        
-      </ul>      
-    </div>
-  </div>
-</nav>
-</header>
-  <div class="container">
-    <!-- Heading -->
-    <h1 class="text-center my-4">Community of Inquiry</h1>
-    <h1 class="text-center my-4">Praxis Framework</h1>
-    <div id="filter-controls">
-		<button onclick="filterApproaches('A')" class="btn btn-primary">Research-Based (A)</button>
-		<button onclick="filterApproaches('B')" class="btn btn-primary">Focus Group (B)</button>
-		<button onclick="filterApproaches('All')" class="btn btn-primary">Show All</button>
-	</div>
-    <!-- Row 1 -->
-    <div class="row">
-    <div class="col-md-4 card">
-        <div class="col-md-12">
-            <h2><a href="#">Social Presence</a></h2>
-			<p>Social presence is the ability of learners to project their personal characteristics into the community of inquiry, thereby presenting themselves as 'real people.'</p>			
+<body class="min-h-screen bg-cream text-slate-700 antialiased">
+  <header class="border-b border-slate-200/80 bg-white/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 lg:px-8" aria-label="Primary navigation">
+      <a class="flex items-center gap-3 font-semibold text-ink" href="./"><span class="grid h-10 w-10 place-items-center rounded-2xl bg-ink text-sm text-white">CoI</span><span>Praxis Framework</span></a>
+      <a class="rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-sky-200" href="./survey/">Take the self-reflection survey</a>
+    </nav>
+  </header>
+  <main>
+    <section class="relative overflow-hidden border-b border-slate-200 bg-white">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div><div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+      <div class="relative mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-24">
+        <div class="max-w-3xl">
+          <h1 class="font-display text-4xl leading-tight text-ink sm:text-6xl">Explore the Community of Inquiry in practice.</h1>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600">Browse practical strategies for teaching, social and cognitive presence. Open a category to find ideas drawn from research and educator focus groups, then save the approaches that fit your context.</p>
+          <div class="mt-8 max-w-3xl rounded-2xl border border-slate-200 bg-slate-50/80 p-5 text-sm leading-6 text-slate-600">
+            <p><strong class="text-ink">Theoretical basis:</strong> The Community of Inquiry theoretical framework was developed by D. Randy Garrison, Terry Anderson and Walter Archer through a Canadian Social Sciences and Humanities Research Council-funded study of text-based computer conferencing conducted from 1997 to 2001. The theoretical foundation was set out in their 2000 paper, <a class="font-semibold text-teal underline decoration-teal-300 underline-offset-4 hover:text-teal-800" href="https://doi.org/10.1016/S1096-7516(00)00016-6" target="_blank" rel="noopener noreferrer"><cite>Critical Inquiry in a Text-Based Environment: Computer Conferencing in Higher Education</cite></a>. <a class="font-semibold text-teal underline decoration-teal-300 underline-offset-4 hover:text-teal-800" href="https://www.thecommunityofinquiry.org/framework" target="_blank" rel="noopener noreferrer">Read the CoI website’s explanation of the framework</a>.</p>
+            <p class="mt-4 border-t border-slate-200 pt-4"><strong class="text-ink">About this tool:</strong> The CoI Praxis Framework presented on this site was developed from research conducted by Sam Cogan with participatory action research (PAR) participants from National College of Ireland, as part of an EdD at the University of Sheffield. It applies the established CoI theoretical framework by bringing together approaches identified in the literature and through the PAR process. This tool is a practice-focused outcome of that research; it is not part of, or an official product of, the original Community of Inquiry framework.</p>
+            <p class="mt-4 border-t border-slate-200 pt-4"><strong class="text-ink">The survey and the Praxis Framework:</strong> The survey provides a starting point for using the Praxis Framework. The questions come from the original learner-facing <a class="font-semibold text-teal underline decoration-teal-300 underline-offset-4 hover:text-teal-800" href="https://www.thecommunityofinquiry.org/coisurvey" target="_blank" rel="noopener noreferrer">Community of Inquiry Survey</a>, developed and validated by a collaborative research team. They are reframed here as an educator reflective tool: educators place themselves in their learners’ shoes and consider how learners might respond. The resulting scores are prompts for reflection, not an evaluation or diagnosis. Each survey category connects to the corresponding part of the Praxis Framework, where users can examine relevant approaches identified through the research.</p>
+          </div>
         </div>
-       <!-- Social Presence: Emotional Expression -->
-<div class="col-md-12 card">
-    <div class="card-header" id="headingEmotionalExpression" data-bs-toggle="collapse" data-bs-target="#collapseEmotionalExpression" aria-expanded="false" aria-controls="collapseEmotionalExpression" style="cursor: pointer;">
-        <h3 class="mb-0">Emotional Expression</h3>
-    </div>
-    <div id="collapseEmotionalExpression" class="collapse" aria-labelledby="headingEmotionalExpression" data-bs-parent="#accordionExample">
-        <div class="card-body">
-            <div id="emotional-expression"></div> <!-- Collapsible content will be injected here -->
+      </div>
+    </section>
+    <section class="mx-auto max-w-7xl px-5 py-12 lg:px-8 lg:py-16" aria-labelledby="approaches-heading">
+      <div class="mb-9 flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
+        <div><p class="text-sm font-bold uppercase tracking-[.16em] text-teal">Strategy library</p><h2 id="approaches-heading" class="mt-2 font-display text-3xl text-ink">Choose a presence to explore</h2></div>
+        <div id="filter-controls" class="inline-flex w-fit flex-wrap gap-2 rounded-2xl border border-slate-200 bg-white p-1.5 shadow-sm" aria-label="Filter approaches by source">
+          <button type="button" class="filter-button active" data-filter="All">All approaches</button><button type="button" class="filter-button" data-filter="A">Research-based</button><button type="button" class="filter-button" data-filter="B">Focus group</button>
         </div>
-    </div>
-</div>
-
-<!-- Social Presence: Open Communication -->
-<div class="col-md-12 card">
-    <div class="card-header" id="headingOpenCommunication" data-bs-toggle="collapse" data-bs-target="#collapseOpenCommunication" aria-expanded="false" aria-controls="collapseOpenCommunication" style="cursor: pointer;">
-        <h3 class="mb-0">Open Communication</h3>
-    </div>
-    <div id="collapseOpenCommunication" class="collapse" aria-labelledby="headingOpenCommunication" data-bs-parent="#accordionExample">
-        <div class="card-body">
-            <div id="open-communication"></div> <!-- Collapsible content will be injected here -->
+      </div>
+      <div id="approach-grid" class="grid gap-6 lg:grid-cols-3" aria-live="polite"></div>
+    </section>
+    <section class="border-y border-slate-200 bg-white">
+      <div class="mx-auto grid max-w-7xl gap-8 px-5 py-12 lg:grid-cols-[.75fr_1.25fr] lg:px-8 lg:py-16">
+        <div><h2 class="font-display text-3xl text-ink">Selected approaches</h2><p class="mt-4 leading-7 text-slate-600">Select approaches from the lists above to add them here. You can remove individual approaches or copy the complete list so that you can paste it into your notes, a course-planning document, or material for discussion with colleagues.</p></div>
+        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-soft">
+          <div id="selected-approaches" class="space-y-5"><p class="rounded-2xl border border-dashed border-slate-300 bg-white p-6 text-center text-slate-500">No approaches saved yet.</p></div>
+          <div class="mt-6 flex flex-wrap items-center gap-3"><button id="copy-btn" type="button" class="rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-40">Copy selected approaches</button><span id="copy-status" class="text-sm font-medium text-teal" role="status"></span></div>
         </div>
-    </div>
-</div>
-
-<!-- Social Presence: Group Cohesion -->
-<div class="col-md-12 card">
-    <div class="card-header" id="headingGroupCohesion" data-bs-toggle="collapse" data-bs-target="#collapseGroupCohesion" aria-expanded="false" aria-controls="collapseGroupCohesion" style="cursor: pointer;">
-        <h3 class="mb-0">Group Cohesion</h3>
-    </div>
-    <div id="collapseGroupCohesion" class="collapse" aria-labelledby="headingGroupCohesion" data-bs-parent="#accordionExample">
-        <div class="card-body">
-            <div id="group-cohesion"></div> <!-- Collapsible content will be injected here -->
-        </div>
-    </div>
-</div>
-
-    </div>
-
-    <div class="col-md-4 card">
-        <div class="col-md-12">
-            <h2><a href="#">Teaching Presence</a></h2>
-			<p>Teaching presence is defined as the design, facilitation, and direction of cognitive and social processes for the purpose of realizing personally meaningful and educational worthwhile learning outcomes.</p>			
-        </div>
-        <!-- Teaching Presence: Design and Organization -->
-<div class="col-md-12 card">
-    <div class="card-header" id="headingDesignOrganization" data-bs-toggle="collapse" data-bs-target="#collapseDesignOrganization" aria-expanded="false" aria-controls="collapseDesignOrganization" style="cursor: pointer;">
-        <h3 class="mb-0">Design and Organization</h3>
-    </div>
-    <div id="collapseDesignOrganization" class="collapse" aria-labelledby="headingDesignOrganization" data-bs-parent="#accordionExample">
-        <div class="card-body">
-            <div id="design-organization"></div> <!-- Collapsible content will be injected here -->
-        </div>
-    </div>
-</div>
-
-<!-- Teaching Presence: Facilitation -->
-<div class="col-md-12 card">
-    <div class="card-header" id="headingFacilitation" data-bs-toggle="collapse" data-bs-target="#collapseFacilitation" aria-expanded="false" aria-controls="collapseFacilitation" style="cursor: pointer;">
-        <h3 class="mb-0">Facilitation</h3>
-    </div>
-    <div id="collapseFacilitation" class="collapse" aria-labelledby="headingFacilitation" data-bs-parent="#accordionExample">
-        <div class="card-body">
-            <div id="facilitation"></div> <!-- Collapsible content will be injected here -->
-        </div>
-    </div>
-</div>
-
-<!-- Teaching Presence: Direct Instruction -->
-<div class="col-md-12 card">
-    <div class="card-header" id="headingDirectInstruction" data-bs-toggle="collapse" data-bs-target="#collapseDirectInstruction" aria-expanded="false" aria-controls="collapseDirectInstruction" style="cursor: pointer;">
-        <h3 class="mb-0">Direct Instruction</h3>
-    </div>
-    <div id="collapseDirectInstruction" class="collapse" aria-labelledby="headingDirectInstruction" data-bs-parent="#accordionExample">
-        <div class="card-body">
-            <div id="direct-instruction"></div> <!-- Collapsible content will be injected here -->
-        </div>
-    </div>
-</div>
-
-    </div>
-
-    <div class="col-md-4 card">
-        <div class="col-md-12">
-            <h2><a href="#">Cognitive Presence</a></h2>
-			<p>Cognitive presence is the extent to which the participants in any particular configuration of a community of inquiry are able to construct meaning through sustained communication.</p>
-        </div>
-        <!-- Cognitive Presence: Triggering Event -->
-<div class="col-md-12 card">
-    <div class="card-header" id="headingTriggeringEvent" data-bs-toggle="collapse" data-bs-target="#collapseTriggeringEvent" aria-expanded="false" aria-controls="collapseTriggeringEvent" style="cursor: pointer;">
-        <h3 class="mb-0">Triggering Event</h3>
-    </div>
-    <div id="collapseTriggeringEvent" class="collapse" aria-labelledby="headingTriggeringEvent" data-bs-parent="#accordionExample">
-        <div class="card-body">
-            <div id="triggering-event"></div> <!-- Collapsible content will be injected here -->
-        </div>
-    </div>
-</div>
-
-<!-- Cognitive Presence: Exploration -->
-<div class="col-md-12 card">
-    <div class="card-header" id="headingExploration" data-bs-toggle="collapse" data-bs-target="#collapseExploration" aria-expanded="false" aria-controls="collapseExploration" style="cursor: pointer;">
-        <h3 class="mb-0">Exploration</h3>
-    </div>
-    <div id="collapseExploration" class="collapse" aria-labelledby="headingExploration" data-bs-parent="#accordionExample">
-        <div class="card-body">
-            <div id="exploration"></div> <!-- Collapsible content will be injected here -->
-        </div>
-    </div>
-</div>
-
-<!-- Cognitive Presence: Integration -->
-<div class="col-md-12 card">
-    <div class="card-header" id="headingIntegration" data-bs-toggle="collapse" data-bs-target="#collapseIntegration" aria-expanded="false" aria-controls="collapseIntegration" style="cursor: pointer;">
-        <h3 class="mb-0">Integration</h3>
-    </div>
-    <div id="collapseIntegration" class="collapse" aria-labelledby="headingIntegration" data-bs-parent="#accordionExample">
-        <div class="card-body">
-            <div id="integration"></div> <!-- Collapsible content will be injected here -->
-        </div>
-    </div>
-</div>
-
-<!-- Cognitive Presence: Resolution -->
-<div class="col-md-12 card">
-    <div class="card-header" id="headingResolution" data-bs-toggle="collapse" data-bs-target="#collapseResolution" aria-expanded="false" aria-controls="collapseResolution" style="cursor: pointer;">
-        <h3 class="mb-0">Resolution</h3>
-    </div>
-    <div id="collapseResolution" class="collapse" aria-labelledby="headingResolution" data-bs-parent="#accordionExample">
-        <div class="card-body">
-            <div id="resolution"></div> <!-- Collapsible content will be injected here -->
-        </div>
-    </div>
-</div>
-
-    </div>
-</div>
-<div class="col-md-12">
-    <h3>Your Selected Approaches</h3>
-    <div id="selected-approaches"></div> <!-- This will display the user's selected list -->
-    <button id="copy-btn" class="btn btn-primary mt-2">Copy to Clipboard</button>
-</div>
-
-<div class="container">
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      
-    </ul>
-    <p class="text-center text-muted">Contact Researcher</p>
-  </footer>
-</div>
- 
-
+      </div>
+    </section>
+  </main>
+  <footer class="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between lg:px-8"><p>Community of Inquiry Praxis Framework</p><a class="font-semibold text-ink hover:text-teal" href="./survey/">Start with self-reflection →</a></footer>
 </body>
 </html>

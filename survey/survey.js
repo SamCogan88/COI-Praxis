@@ -1,6 +1,6 @@
 const questions = {
   "Teaching Presence": {
-    "Design & Organization": [
+    "Design and Organization": [
       "The instructor clearly communicated important course topics.",
       "The instructor clearly communicated important course goals.",
       "The instructor provided clear instructions on how to participate in course learning activities.",
@@ -21,7 +21,7 @@ const questions = {
     ]
   },
   "Social Presence": {
-    "Affective Expression": [
+    "Emotional Expression": [
       "Getting to know other course participants gave me a sense of belonging in the course.",
       "I was able to form distinct impressions of some course participants.",
       "Online or web-based communication is an excellent medium for social interaction."

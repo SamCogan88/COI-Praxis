@@ -1,243 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Self Evaluation Survey</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  
-  <style>
-   .category-title {
-      margin-top: 20px;
-      font-weight: bold;
-      color: #333;
-    }
-    .subcategory-title {
-      margin-top: 10px;
-      color: #555;
-    }
-    .rating-select {
-      width: 80px; 
-      display: inline-block;
-      margin-left: 10px; 
-    }    
-    .text-high-score {
-      color: green;
-    }
-    .text-low-score {
-      color: red;
-    }
-  </style>
-</head>
-<body>
-	<header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="../">COI Praxis Framework</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Self Reflection Survey</a>
-        </li>        
-      </ul>      
-    </div>
-  </div>
-</nav>
-</header>
-   <div class="text-center mb-4">
-      <button id="themeToggleBtn" class="btn btn-outline-secondary">Switch to Dark Theme</button>
-    </div>
-  <div class="container">
- <div class="jumbotron bg-light">
-  <h1 class="display-4">COI Self Evaluation Survey</h1>
-  <p class="lead">This survey is designed to be taken from the educator's perspective as a self-evaluation tool. The goal is to help educators reflect on how well they feel they can influence various aspects of the community of inquiry in their classroom. This includes their ability to affect teaching presence, social presence, and cognitive presence — key elements that shape the learning environment and student engagement.</p>
-  <hr class="my-4">
-  
-</div>
-   
-    <form id="feedbackForm">
-	<div><center><i><b>Please rate each item from Strongly Disagree (1) to Strongly Agree (5)</b></i></center></div>
-      <div id="form-content"></div>
-      <button type="submit" class="btn btn-primary mt-3">Submit</button>
-    </form>
-    
-    <div class="mt-4">
-      <h3>Scores:</h3>
-      <div id="results" class="row"></div> <!-- Use Bootstrap row for card layout -->
-    </div>
-  </div>
-<script>
-    const themeToggleBtn = document.getElementById('themeToggleBtn');
-    const body = document.body;
-
-    // Function to toggle between light and dark theme
-    themeToggleBtn.addEventListener('click', function() {
-      if (body.classList.contains('light-theme')) {
-        body.classList.remove('light-theme');
-        body.classList.add('dark-theme');
-        themeToggleBtn.textContent = 'Switch to Light Theme'; // Update button text
-      } else {
-        body.classList.remove('dark-theme');
-        body.classList.add('light-theme');
-        themeToggleBtn.textContent = 'Switch to Dark Theme'; // Update button text
-      }
-    });
-  </script>
-  <!-- Load survey.js dynamically and ensure form is generated after it's loaded -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reflect on how students may experience teaching, social and cognitive presence in your course.">
+  <title>CoI Teaching Self-Reflection</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    const loadSurveyScript = () => {
-      const script = document.createElement('script');
-      script.src = 'survey.js';
-      script.onload = () => {
-        generateForm(); // Ensure form is generated after survey.js is loaded
-      };
-      script.onerror = () => {
-        console.error('Failed to load survey.js');
-      };
-      document.head.appendChild(script);
-    };
-
-    // Function to generate the form using questions from survey.js
-    function generateForm() {
-      const formContent = document.getElementById('form-content');
-      let html = '';
-
-      // Check if questions are loaded from survey.js
-      if (!questions) {
-        console.error("Questions could not be loaded from survey.js");
-        return;
-      }
-
-      // Loop through categories and subcategories to generate form fields
-      for (let category in questions) {
-        html += `<h4 class="category-title">${category}</h4>`;
-        
-        for (let subcategory in questions[category]) {
-          html += `<h5 class="subcategory-title">${subcategory}</h5>`;
-          questions[category][subcategory].forEach((question, index) => {
-            html += `
-              <div class="row mb-3">
-                <div class="col-md-10">
-                  <label>${question}</label>
-                </div>
-                <div class="col-md-2">
-                  <select class="form-select rating-select" name="${category}-${subcategory}-${index}" required>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select>
-                </div>
-              </div>
-            `;
-          });
-        }
-      }
-
-      formContent.innerHTML = html;
-    }
-
-    // Function to calculate the average scores for each category and subcategory
-    function calculateScores(event) {
-      event.preventDefault();
-      const formData = new FormData(document.getElementById('feedbackForm'));
-      const scores = {};
-      const questionCounts = {}; // To track the number of questions in each subcategory and category
-      const overallCategoryScores = {}; // To track scores for overall categories
-
-      // Initialize score tracking for each category and subcategory
-      for (let category in questions) {
-        scores[category] = {};
-        overallCategoryScores[category] = 0;
-        questionCounts[category] = {};
-
-        for (let subcategory in questions[category]) {
-          scores[category][subcategory] = 0;
-          questionCounts[category][subcategory] = questions[category][subcategory].length; // Get number of questions in each subcategory
-        }
-      }
-
-      // Add up the scores for each category and subcategory
-      for (let [key, value] of formData.entries()) {
-        const [category, subcategory] = key.split('-');
-        scores[category][subcategory] += parseInt(value);
-      }
-
-      // Calculate the averages for each subcategory and overall category
-      for (let category in scores) {
-        let totalCategoryScore = 0;
-        let totalQuestionsInCategory = 0;
-
-        for (let subcategory in scores[category]) {
-          const subcategoryScore = scores[category][subcategory];
-          const numQuestionsInSubcategory = questionCounts[category][subcategory];
-
-          // Calculate average for subcategory
-          const averageSubcategoryScore = subcategoryScore / numQuestionsInSubcategory;
-          scores[category][subcategory] = averageSubcategoryScore.toFixed(2); // Save the average as the score
-
-          // Add to the overall category score
-          totalCategoryScore += subcategoryScore;
-          totalQuestionsInCategory += numQuestionsInSubcategory;
-        }
-
-        // Calculate average for the overall category
-        overallCategoryScores[category] = (totalCategoryScore / totalQuestionsInCategory).toFixed(2);
-      }
-
-      displayResults(scores, overallCategoryScores);
-    }
-
-    // Function to get the appropriate text class based on score
-    function getScoreClass(score) {
-      return score >= 2.5 ? 'text-high-score' : 'text-low-score';
-    }
-
-    // Function to display the results in Bootstrap cards with conditional formatting
-    function displayResults(scores, overallCategoryScores) {
-      const resultsDiv = document.getElementById('results');
-      resultsDiv.innerHTML = ''; // Clear previous results
-
-      // Display the averages for each subcategory in Bootstrap cards
-      for (let category in scores) {
-        let html = `
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">${category} (Average: <span class="${getScoreClass(overallCategoryScores[category])}">${overallCategoryScores[category]}</span>)</h5>
-                <ul class="list-group list-group-flush">
-        `;
-
-        for (let subcategory in scores[category]) {
-          html += `
-            <li class="list-group-item">
-              <strong>${subcategory}:</strong> 
-              <span class="${getScoreClass(scores[category][subcategory])}">${scores[category][subcategory]}</span>
-            </li>
-          `;
-        }
-
-        html += `
-                </ul>
-              </div>
-            </div>
-          </div>
-        `;
-
-        resultsDiv.innerHTML += html;
-      }
-    }
-
-    // Event listener for form submission
-    document.getElementById('feedbackForm').addEventListener('submit', calculateScores);
-
-    // Load the survey.js script and generate the form
-    loadSurveyScript();
+    tailwind.config = { theme: { extend: { colors: { ink: '#17324d', cream: '#f7f5ef', teal: '#0f766e', sky: '#2563a6', plum: '#76517c' }, boxShadow: { soft: '0 18px 50px rgba(23, 50, 77, .10)' } } } };
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="survey.css">
+  <script src="survey.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body class="min-h-screen bg-cream text-slate-700 antialiased">
+  <header class="border-b border-slate-200/80 bg-white/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-5xl items-center justify-between gap-5 px-5 py-4 lg:px-8" aria-label="Primary navigation">
+      <a class="flex items-center gap-3 font-semibold text-ink" href="../"><span class="grid h-10 w-10 place-items-center rounded-2xl bg-ink text-sm text-white">CoI</span><span>Praxis Framework</span></a>
+      <a class="text-sm font-bold text-ink hover:text-teal" href="../">Browse all approaches →</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro-gradient border-b border-slate-200">
+      <div class="mx-auto max-w-5xl px-5 py-14 lg:px-8 lg:py-20">
+        <div class="max-w-3xl">
+          <p class="text-sm font-bold uppercase tracking-[.18em] text-teal">Educator self-reflection</p>
+          <h1 class="mt-3 font-display text-4xl leading-tight text-ink sm:text-5xl">Place yourself in your learners’ shoes.</h1>
+          <p class="mt-6 text-lg leading-8 text-slate-700">Please complete the survey by reflecting on your own online or blended teaching and imagining the experience from your learners’ perspective. As you read each statement, place yourself in your learners’ shoes and consider how you think they would respond about your course. There are no right or wrong answers. The purpose is to support reflection on your current practice and to identify areas you may wish to explore further. Your scores for each CoI presence and subcategory will be calculated automatically and can be used as a starting point for reflection and discussion.</p>
+          <aside class="mt-7 rounded-2xl border border-teal-200 bg-white/80 p-5 text-sm leading-6 text-slate-600">
+            <strong class="text-ink">How the survey relates to the Praxis Framework:</strong> the established Community of Inquiry questionnaire is learner-facing, and its original question wording is retained here without changes. The original 34-item survey was <a class="font-semibold text-teal underline decoration-teal-300 underline-offset-4 hover:text-teal-800" href="https://www.thecommunityofinquiry.org/coisurvey" target="_blank" rel="noopener noreferrer">developed and validated by a collaborative CoI research team</a>; its multi-institutional validation is reported by <a class="font-semibold text-teal underline decoration-teal-300 underline-offset-4 hover:text-teal-800" href="https://doi.org/10.1016/j.iheduc.2008.06.003" target="_blank" rel="noopener noreferrer">Arbaugh and colleagues (2008)</a>. In this context, it is reframed as an educator reflective tool: you are being asked to place yourself in your learners’ shoes and anticipate how they might respond. The scores are prompts for reflection rather than an evaluation or diagnostic assessment. After completing the survey, you can select any category to examine the related approaches in the Praxis Framework.
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-5xl px-5 py-10 lg:px-8 lg:py-14">
+      <div class="mb-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-soft sm:flex sm:items-center sm:justify-between sm:gap-6">
+        <div><p class="font-bold text-ink">For each statement, choose one response.</p><p class="mt-1 text-sm text-slate-500">1 = Strongly disagree · 5 = Strongly agree</p></div>
+        <div class="mt-4 min-w-48 sm:mt-0"><div class="flex justify-between text-xs font-bold text-slate-500"><span>Progress</span><span id="progress-label">0 of 34</span></div><div class="mt-2 h-2 overflow-hidden rounded-full bg-slate-100"><div id="progress-bar" class="h-full w-0 rounded-full bg-teal transition-all"></div></div></div>
+      </div>
+
+      <form id="feedback-form" novalidate>
+        <div id="form-content" class="space-y-9"></div>
+        <div id="form-error" class="mt-7 hidden rounded-2xl border border-rose-200 bg-rose-50 p-4 text-sm font-semibold text-rose-800" role="alert"></div>
+        <button type="submit" class="mt-8 w-full rounded-2xl bg-ink px-6 py-4 text-base font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-sky-200 sm:w-auto">Calculate my reflection scores</button>
+      </form>
+    </section>
+
+    <section id="results-section" class="hidden border-t border-slate-200 bg-white" tabindex="-1">
+      <div class="mx-auto max-w-5xl px-5 py-12 lg:px-8 lg:py-16">
+        <p class="text-sm font-bold uppercase tracking-[.18em] text-teal">Your reflection</p>
+        <h2 class="mt-2 font-display text-4xl text-ink">Survey results</h2>
+        <p class="mt-4 max-w-3xl leading-7 text-slate-600">These scores are prompts for reflection. They can help you identify areas of Community of Inquiry praxis that you may want to look at in more detail. Interpret the results in relation to your own teaching context.</p>
+
+        <div class="mt-7 grid gap-3 sm:grid-cols-3" aria-label="Score band explanation">
+          <div class="rounded-2xl bg-amber-50 p-4"><p class="font-bold text-amber-900">Explore · 1.00–2.49</p></div>
+          <div class="rounded-2xl bg-blue-50 p-4"><p class="font-bold text-blue-900">Develop · 2.50–3.74</p></div>
+          <div class="rounded-2xl bg-teal-50 p-4"><p class="font-bold text-teal-900">Extend · 3.75–5.00</p></div>
+        </div>
+
+        <div id="results" class="mt-9 grid gap-6 lg:grid-cols-3"></div>
+
+        <div class="mt-12 rounded-3xl bg-ink p-6 text-white shadow-soft sm:p-8">
+          <div class="grid gap-7 lg:grid-cols-[.8fr_1.2fr]">
+            <div>
+              <h3 class="font-display text-3xl">Matching approaches</h3>
+              <p class="mt-3 leading-7 text-slate-300">Choose a result category to view the approaches associated with it.</p>
+              <label for="strategy-category" class="mt-5 block text-sm font-bold">Result category</label>
+              <select id="strategy-category" class="mt-2 w-full rounded-xl border border-slate-600 bg-slate-800 px-4 py-3 text-white focus:border-teal-300 focus:outline-none focus:ring-2 focus:ring-teal-300"></select>
+            </div>
+            <div id="matching-approaches" class="rounded-2xl bg-white p-5 text-slate-700" aria-live="polite"><p class="text-sm text-slate-600">Select a category to view matching approaches.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="mx-auto max-w-5xl px-5 py-8 text-sm text-slate-500 lg:px-8">Community of Inquiry Praxis Framework</footer>
 </body>
 </html>
